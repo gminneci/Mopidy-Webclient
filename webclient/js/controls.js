@@ -198,18 +198,18 @@ function setRandom(nwrandom) {
 
 function doRandom() {
     if (random == false) {
-        mopidy.playback.setRandom(true);
+        mopidy.tracklist.setRandom(true);
     } else {
-        mopidy.playback.setRandom(false);
+        mopidy.tracklist.setRandom(false);
     }
     setRandom(!random);
 }
 
 function doRepeat() {
     if (repeat == false) {
-        mopidy.playback.setRepeat(true).then();
+        mopidy.tracklist.setRepeat(true).then();
     } else {
-        mopidy.playback.setRepeat(false).then();
+        mopidy.tracklist.setRepeat(false).then();
     }
     setRepeat(!repeat);
 }
